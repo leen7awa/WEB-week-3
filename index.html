@@ -11,7 +11,7 @@
   <body class="dark:bg-gray-700 dark:text-white p-4">
     <div class="max-w-[1000px] w-full mx-auto relative">
       <div id="menu" class="bg-blue-700 dark:bg-blue-500 text-white p-4 flex justify-between">
-        <button class="block sm:hidden" onclick="toggleMenu()">
+        <button class="block sm:hidden" onclick="app.toggleMenu()">
           <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
             <path
               fill="#ffffff"
@@ -41,19 +41,21 @@
         border: true, // app border in the MTW page
       };
 
-      ///////////////////////////////////////////////////////
-      // implement this functions in order to use private API
+      // implement these functions in order to use private API
       const sendPrivateApiRequest = async () => {
         // your code here:
+        // sendRequestToParent({ cat: 'getAssets' })
       };
 
       const acceptPrivateApiResponse = async (data) => {
         // process received data here:
+        // console.log(data)
       };
 
       // use this in order to send on document load
       document.addEventListener('DOMContentLoaded', () => {
         // your code here:
+        // sendRequestToParent({ method: 'getAssets' })
       });
     </script>
     <script src="https://morethanwallet.com/appstore/index.js"></script>
